@@ -80,6 +80,25 @@
     .contact a:hover {
       text-decoration: underline;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -92,7 +111,7 @@
   <main>
     <div class="content">
       <div class="photo">
-        <img src="dog.jpg" alt="Jim 的照片" />
+        <img src="dog.jpg" alt="林峻民的照片" />
       </div>
       <div class="intro">
         <h2>哈囉，我是 林峻民！</h2>
@@ -133,6 +152,12 @@
         <td>國立花蓮高級中學</td>
       </tr>
     </table>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="hualien-high-school.jpg" alt="國立花蓮高級中學校園照片">
+        <div class="caption">國立花蓮高級中學</div>
+      </div>
+    </div>
 
     <hr />
 
@@ -140,9 +165,27 @@
     <ul>
       <li>七星潭：看海、拍照的好地方</li>
       <li>太魯閣國家公園：峽谷壯麗，是健行天堂</li>
-      <li>鯉魚潭：可以踩天鵝船放鬆一下</li>
+      <li>鯉魚潭：可以踩天鵝船放鬆一下午</li>
       <li>東大門夜市：各種花蓮小吃都在這裡找得到</li>
     </ul>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="qixingtan.jpg" alt="七星潭">
+        <div class="caption">七星潭</div>
+      </div>
+      <div class="gallery-item">
+        <img src="taroko.jpg" alt="太魯閣國家公園">
+        <div class="caption">太魯閣國家公園</div>
+      </div>
+      <div class="gallery-item">
+        <img src="liyutan.jpg" alt="鯉魚潭">
+        <div class="caption">鯉魚潭</div>
+      </div>
+      <div class="gallery-item">
+        <img src="dongdamen-night-market.jpg" alt="東大門夜市">
+        <div class="caption">東大門夜市</div>
+      </div>
+    </div>
 
     <hr />
 
