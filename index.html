@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關於我</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans TC', sans-serif;
+      background: linear-gradient(135deg, #f6f9fc, #dfe9f3);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .photo {
+      flex: 1 1 250px;
+    }
+    .photo img {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .intro {
+      flex: 2 1 400px;
+    }
+    .intro h2 {
+      margin-top: 0;
+      color: #444;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      border-top: 2px solid #eee;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    table td:first-child {
+      font-weight: bold;
+      color: #555;
+      width: 30%;
+    }
+    .contact a {
+      color: #667eea;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery-item {
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>關於我</h1>
+    <p>東大生｜充滿好奇心的學生</p>
+  </header>
+
+  <main>
+    <div class="content">
+      <div class="photo">
+        <img src="dog.jpg" alt="林峻民的照片" />
+      </div>
+      <div class="intro">
+        <h2>哈囉，我是 林峻民！</h2>
+        <p>
+          我是一名就讀於臺東大學的學生。在臺北及花蓮生活過。平常喜歡聽音樂，也喜歡騎車出去玩。
+        </p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>基本資料</h2>
+    <table>
+      <tr>
+        <td>姓名</td>
+        <td>林峻民</td>
+      </tr>
+      <tr>
+        <td>興趣</td>
+        <td>聽音樂, 騎車, 魔術方塊</td>
+      </tr>
+      <tr>
+        <td>就讀</td>
+        <td>國立臺東大學 綠能與資訊科技學系</td>
+      </tr>
+      <tr>
+        <td>幹部經驗</td>
+        <td>學藝股長｜東大春輝社 社長｜仁愛服務社 行政副社長</td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>學歷補充</h2>
+    <table>
+      <tr>
+        <td>高中</td>
+        <td>國立花蓮高級中學</td>
+      </tr>
+    </table>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="hualien-high-school.jpg" alt="國立花蓮高級中學校園照片">
+        <div class="caption">國立花蓮高級中學</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>花蓮景點推薦</h2>
+    <ul>
+      <li>七星潭：看海、拍照的好地方</li>
+      <li>太魯閣國家公園：峽谷壯麗，是健行天堂</li>
+      <li>鯉魚潭：可以踩天鵝船放鬆一下午</li>
+      <li>東大門夜市：各種花蓮小吃都在這裡找得到</li>
+    </ul>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="qixingtan.jpg" alt="七星潭">
+        <div class="caption">七星潭</div>
+      </div>
+      <div class="gallery-item">
+        <img src="taroko.jpg" alt="太魯閣國家公園">
+        <div class="caption">太魯閣國家公園</div>
+      </div>
+      <div class="gallery-item">
+        <img src="liyutan.jpg" alt="鯉魚潭">
+        <div class="caption">鯉魚潭</div>
+      </div>
+      <div class="gallery-item">
+        <img src="dongdamen-night-market.jpg" alt="東大門夜市">
+        <div class="caption">東大門夜市</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>聯絡方式</h2>
+    <table class="contact">
+      <tr>
+        <td>Email</td>
+        <td><a href="mailto:11222116@nttu.edu.tw">11222116@nttu.edu.tw</a></td>
+      </tr>
+      <tr>
+        <td>手機</td>
+        <td><a href="tel:+886984388608">+886 984-388-608</a></td>
+      </tr>
+    </table>
+  </main>
+
+</body>
+</html>
